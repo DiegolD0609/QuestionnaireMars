@@ -1,0 +1,546 @@
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+.back1 {
+    background-color: rgb(22, 117, 206);
+    background-image: url("img/blueCharacter.webp");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    resize: both;
+    overflow: scroll;
+}
+
+.back2 {
+  background-color: rgb(152, 21, 21);
+  background-image: url("img/character-redCharacterPurpose6.png");
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  resize: both;
+  overflow: scroll;
+}
+
+.back4 {
+  background-color: rgb(231, 213, 16);
+  background-image: url("img/YellowCharacter_29.webp");
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  resize: both;
+  overflow: scroll;
+}
+
+.conditional {
+  background-color: #fff;
+}
+
+
+#quest {
+    text-align:center;
+    padding: 1.5em;
+    background: #fff;
+    width: 50vw;
+    margin: 0.5em auto;
+    border-radius: .5em;
+    font: 15px/30px 'Open Sans', Arial, Verdana, serif;
+}
+
+#quest1{
+  text-align:center;
+  padding: 1.5em 3em;
+  background: #fff;
+  width: 20vw;
+  margin: 0.5em auto;
+  border-radius: .5em;
+  font: 15px/30px 'Open Sans', Arial, Verdana, serif;
+}
+
+.wrongans{ 
+    background-color:cadetblue;color:#fff; border:5px solid cadetblue !important;
+
+}
+
+.correctans {background-color:cadetblue;color:#fff; border:5px solid cadetblue !important;
+}
+
+
+
+
+
+
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    padding: 10px;
+  }
+  
+  .progress-bar {
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #007bff;
+    text-align: center;
+    line-height: 20px;
+    color: #007bff;
+    
+  }
+  
+  
+/* Apply CSS styles to a submit button */
+button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Apply styles to a submit button when it is disabled */
+button[type="submit"]:disabled {
+  background-color: #ccc;
+  color: #888;
+  cursor: not-allowed;
+}
+
+/* Input text container */
+.input-container {
+  margin-bottom: 15px;
+}
+
+/* Label for input */
+.input-label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Input text field */
+.input-text {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s;
+}
+
+/* Focus state for input */
+.input-text:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.outer-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.checkbox-container {
+  background-color: #f2f2f2; /* Background color for the container */
+  padding: 20px; /* Add some padding around the container */
+  border-radius: 10px; /* Rounded corners for the container */
+  margin-top: 0px;
+  width: 75%;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* horizontally align items in the center */
+ 
+}
+
+/* Checkbox Group */
+.checkbox-group {
+  display: flex; /* Use Flexbox */
+  align-items: center; /* Vertically align items in the center */
+  gap: 10px; /* Add some space between checkboxes */
+}
+
+.icon-checkbox {
+  position: relative;
+  display: inline-block;
+  padding-left: 25px;
+  cursor: pointer;
+  margin-right: 10px; /* Add margin */
+}
+.icon-checkbox label {
+  display: inline-block;
+  background-color: rgb(164, 149, 149); /* Add background color */
+  padding: 4px 10px; /* Add padding */
+  border-radius: 14px; /* Rounded corners */
+}
+
+.icon-checkbox input {
+  display: none;
+}
+
+.checkbox-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+  background-color: transparent;
+  vertical-align: middle; /* Add this line */
+}
+
+input:checked + .checkbox-icon {
+  background-color: #333;
+}
+
+.checkbox-icon::after {
+  content: "\2713"; /* Unicode checkmark symbol */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  display: none;
+}
+
+input:checked + .checkbox-icon::after {
+  display: block;
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .icon-checkbox-label {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+}
+
+
+.question-container {
+
+  padding: 10px 18px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.question {
+  font-size: 18px; /* Set font size for the question */
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.separate-div {
+  background-color: rgb(46, 148, 244);
+}
+
+
+/* Basic styling for the container */
+.box-container {
+  width: 80%; /* Set the desired width */
+  max-width: 800px; /* Set the maximum width */
+  max-height: 400px;
+  height: 80%;
+  background-color: rgb(77, 168, 253);
+  border: 5px solid  rgb(22, 117, 206);
+  padding: 20px;
+  margin: 0 auto; /* Center the container horizontally */
+
+   /* Adding box shadow for the shadow effect */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+  background-image: url("img/blueCharacter.webp");
+  background-size: 380px 380px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+/* Center the container vertically and horizontally */
+.container-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color:  rgb(22, 117, 206);
+}
+
+.read-container {
+  width: 70%;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  transition: border-color 0.3s;
+  display: flex;
+  justify-content: center;
+}
+.information-one {
+  margin-top: 30px;
+  width: 50%;
+  border: 1px solid #ccc;
+  margin-left: 30px;
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  transition: border-color 0.3s;
+  display: flex;
+  justify-content: center;
+}
+
+/* Basic styling for the container */
+.box-containerone {
+  width: 80%; /* Set the desired width */
+  max-width: 800px; /* Set the maximum width */
+  max-height: 400px;
+  height: 80%;
+  background-color: rgb(255, 178, 0);
+  border: 5px solid  rgb(255, 178, 0);
+  padding: 20px;
+  margin: 0 auto; /* Center the container horizontally */
+
+   /* Adding box shadow for the shadow effect */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+  background-image: url("img/YellowCharacter_29.png");
+  background-size: 380px 380px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+/* Center the container vertically and horizontally */
+.container-bodyone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color:  rgb(255, 203, 66);
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .box-container {
+    width: 90%;
+    max-width: none;
+  }
+}
+
+/* Basic styling for the container */
+.box-containertwo {
+  width: 80%; /* Set the desired width */
+  max-width: 800px; /* Set the maximum width */
+  max-height: 400px;
+  height: 80%;
+  background-color: rgb(226, 106, 44);
+  border: 5px solid  rgb(226, 106, 44);
+  padding: 20px;
+  margin: 0 auto; /* Center the container horizontally */
+
+   /* Adding box shadow for the shadow effect */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+  background-image: url("img/Character-orangeCharacterPurpose6.jpg");
+  background-size: 380px 380px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+/* Center the container vertically and horizontally */
+.container-bodytwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color:  rgb(255, 130, 67);
+}
+.information-two {
+  margin-top: 30px;
+  width: 50%;
+  border: 1px solid #ccc;
+  margin-left: 30px;
+  padding: 10px;
+  font-size: 24px;
+  color: white;
+  transition: border-color 0.3s;
+  display: flex;
+  justify-content: center;
+}
+
+.checkbox2-container {
+  padding: 20px; /* Add some padding around the container */
+  border-radius: 10px; /* Rounded corners for the container */
+  margin-top: 0px;
+  width: 75%;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* horizontally align items in the center */
+ 
+}
+
+/* Checkbox Group */
+.checkbox2-group {
+  display: flex; /* Use Flexbox */
+  align-items: center; /* Vertically align items in the center */
+  gap: 10px; /* Add some space between checkboxes */
+}
+
+.icon2-checkbox {
+  position: relative;
+  display: inline-block;
+  padding-left: 25px;
+  cursor: pointer;
+  margin-right: 10px; /* Add margin */
+}
+
+.text-color {
+  font-size: 14px;
+  color:whitesmoke;
+}
+.icon2-checkbox input {
+  display: none;
+}
+
+.checkbox-icon2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid whitesmoke;
+  background-color: transparent;
+  vertical-align: middle; /* Add this line */
+}
+
+input:checked + .checkbox-icon2 {
+  background-color: whitesmoke;
+}
+
+.checkbox-icon2::after {
+  content: "\2713"; /* Unicode checkmark symbol */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 16px;
+  display: none;
+}
+
+input:checked + .checkbox-icon2::after {
+  display: block;
+}
+
+
+/* styles.css */
+
+/* styles.css */
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-select select {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #3498db;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.custom-select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.custom-select select:hover {
+  border-color: #555;
+}
+
+.custom-select select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.container-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Basic styling for the container */
+.box-containerthree {
+  width: 90%; /* Set the desired width */
+  max-width: 1200px; /* Set the maximum width */
+  max-height: 1300px;
+  height: 80%;
+  background-color: rgb(77, 168, 253);
+  border: 5px solid  rgb(77, 168, 253);
+  padding: 20px;
+  margin: 0 auto; /* Center the container horizontally */
+
+   /* Adding box shadow for the shadow effect */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+  background-image: url("img/blueCharacter.webp");
+  background-size: 500px 500px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+/* Center the container vertically and horizontally */
+.container-bodythree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color:  rgb(77, 168, 253);
+}
